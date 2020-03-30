@@ -1,0 +1,3 @@
+#pragma once
+
+#define RANAE_VERSION "@VCS_TAG@"
