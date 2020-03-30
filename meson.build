@@ -65,3 +65,9 @@ ranae_version = vcs_tag(
   output: 'version.h')
 
 subdir('src')
+
+enable_tests = get_option('enable_tests')
+
+if enable_tests
+  subdir('tests')
+endif
