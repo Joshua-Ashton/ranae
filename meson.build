@@ -25,6 +25,8 @@ else
   ranae_library_path = meson.source_root() + '/lib32'
 endif
 
+ranae_platform = target_machine.system()
+
 if ranae_compiler.get_id() == 'msvc'
   wrc = find_program('rc')
 else
